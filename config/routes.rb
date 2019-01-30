@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   devise_scope :user do
     get 'masuk_ke_website_bimas_katolik_sumba_tengah', to: 'devise/sessions#new'
+    get 'mendaftar_ke_website_bimas_katolik_sumba_tengah', to: 'devise/registrations#new'
   end
 
   resources :arsip
