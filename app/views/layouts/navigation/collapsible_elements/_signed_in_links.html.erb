@@ -1,0 +1,11 @@
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span id="user-name"><%= current_user.nama %></span>
+    <span class="caret"></span>
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <%= link_to 'Edit Profile', edit_user_registration_path, class: 'dropdown-item' %>
+    <%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+  </div>
+</li>
