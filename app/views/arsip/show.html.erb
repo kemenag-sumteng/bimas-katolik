@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Judul:</strong>
+  <%= @arsip.judul %>
+</p>
+
+<p>
+  <strong>Keterangan:</strong>
+  <%= @arsip.keterangan %>
+</p>
+
+<%= link_to 'Edit', edit_arsip_path(@arsip) %> |
+<%= link_to 'Back', arsip_index_path %>

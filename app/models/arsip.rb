@@ -1,0 +1,2 @@
+class Arsip < ApplicationRecord
+end
