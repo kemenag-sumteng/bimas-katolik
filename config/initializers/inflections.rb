@@ -14,3 +14,9 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.irregular 'arsip', 'arsip'
+  inflect.irregular 'galeri', 'galeri'
+  inflect.irregular 'informasi', 'informasi'
+  inflect.irregular 'laporan', 'laporan'
+end
