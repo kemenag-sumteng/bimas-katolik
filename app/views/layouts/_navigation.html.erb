@@ -1,23 +1,62 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Bimkat Sumteng</a>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+  <%= link_to 'Bimkat Sumteng', root_path, class: 'navbar-brand' %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tentang
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/tentang/visi_misi">Visi dan Misi Kantor Kementerian Agama Kabupaten Sumba Tengah</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/tentang/tekad_urakat">Tekad Pelayanan Seksi Urusan Agama Katolik</a>
+          <a class="dropdown-item" href="/tentang/tekad_pendakat">Tekad Pelayanan Penyelenggara Pendidikan Agama Katolik</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Data
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/data/keagamaan_katolik">Data Keagamaan Katolik</a>
+          <a class="dropdown-item" href="/data/pendidikan_katolik">Data Pendidikan Agama Katolik</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Galeri
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/galeri/foto">Foto</a>
+          <a class="dropdown-item" href="/galeri/video">Video</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Informasi
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/informasi/berita_terkini">Berita Terkini</a>
+          <a class="dropdown-item" href="/informasi/pengumuman">Pengumuman</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Laporan
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/laporan/penyuluh_agama_katolik">Laporan Penyuluh Agama Katolik</a>
+          <a class="dropdown-item" href="/laporan/kinerja_pegawai_bimkat_sumteng">Laporan Kinerja Pegawai Bimkat Sumteng</a>
+        </div>
+      </li>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-primary my-2 my-sm-0" href="/laporan/penyuluh_agama_katolik">Masuk</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" href="/laporan/penyuluh_agama_katolik">Mendaftar</button>
+    </form>
+  </div>
 </nav>

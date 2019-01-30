@@ -3,14 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
-# Frontend
-gem 'bootstrap-sass', '~> 3.3.6'
-
-# Bootstrap depends on jQuery
+# bootstrap
+gem 'bootstrap', '~> 4.2.1'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'jquery-rails'
-
-# Bootstrap tooltips and popovers depend on popper.js for positioning.
-gem 'popper_js', '~> 1.14.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
