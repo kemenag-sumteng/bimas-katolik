@@ -19,4 +19,5 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.irregular 'galeri', 'galeri'
   inflect.irregular 'informasi', 'informasi'
   inflect.irregular 'laporan', 'laporan'
+  inflect.irregular 'web', 'web'
 end
