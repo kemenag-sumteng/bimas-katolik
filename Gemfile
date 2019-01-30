@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
+# Authentication
+gem 'devise'
+
 # bootstrap
 gem 'bootstrap', '~> 4.2.1'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
